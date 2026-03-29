@@ -1,67 +1,167 @@
-# 随机数生成器与蒙特卡洛算法
+# RandomNumberGenerator
 
-## 项目简介
+**Impact of Random Number Quality on Monte Carlo Option Pricing Accuracy**
 
-**本项目旨在通过定量分析，比较和评价不同随机数生成器在蒙特卡洛算法中的应用效果。**
+**随机数质量对蒙特卡洛期权定价方法精确度的影响**
 
-随机数生成器是蒙特卡洛算法的核心组成部分，它能够产生一系列服从特定概率分布的随机数，用以模拟蒙特卡洛算法所需的采样分布。
-我们注意到，不同的随机数生成器可能会导致蒙特卡洛算法的结果产生不同程度的误差，它们的效率也不尽相同。因此，本项目将使用多种标准和指标，对不同随机数生成器产生的随机数序列作完整、详细的质量检验与性能评估，以确定哪些随机数生成器更适用于蒙特卡洛算法。
+---
 
-## 文件结构
+## Overview / 概述
 
-- `base.py`
-含启动参数和基类`Distribution`的实现。
+This project evaluates and compares the quality and performance of various random number generators (RNGs) and their impact on the accuracy of Monte Carlo simulations for European call option pricing.
 
-- `Uniformer.py`
-含均匀分布随机数生成类`Uniformer`的实现。
+本项目通过定量分析，系统地比较和评价了多种随机数生成算法的质量与性能，并研究其对蒙特卡洛欧式看涨期权定价精确度的影响。
 
-- `Normalist.py`
-含正态分布随机数生成类`Normalist`的实现。
+The study covers 13 uniform distribution generators and 7 normal distribution generators from multiple libraries, using a comprehensive suite of statistical tests to assess sequence quality.
 
-- `MonteCarlo.py`
-构造了蒙特卡洛算法测试类`MonteCarlo`。
+研究涵盖了来自多个计算库的 13 种均匀分布生成算法和 7 种正态分布生成算法，通过一组完整的统计检验来评估序列质量。
 
-- `report`
-以文本形式保存了所有的生成报告。
+## Methods / 方法
 
-- `cache`
-缓存文件保存目录。
+### Uniform Distribution Generators / 均匀分布生成算法
 
-## 使用方法
+| Method | Source | Description |
+|--------|--------|-------------|
+| Linear Congruential | base | 简单线性同余算法 |
+| Mersenne Twister | Python `random` | Python 标准库默认算法 |
+| PCG64 | NumPy | `np.random.default_rng` 默认算法 |
+| Latin Hypercube | SciPy | 拉丁超立方采样 |
+| Poisson Disk | SciPy | 泊松盘采样 |
+| Halton | SciPy | Halton 低差异序列 |
+| Sobol (SciPy) | SciPy | Sobol 低差异序列 |
+| Sobol (Unit) | QuantLib | Sobol 序列，单位初始化矩阵 |
+| Sobol (Kuo) | QuantLib | Sobol 序列，Kuo 初始化矩阵 |
+| Sobol (Kuo3) | QuantLib | Sobol 序列，Kuo3 初始化矩阵 |
+| Sobol (Jaeckel) | QuantLib | Sobol 序列，Jaeckel 初始化矩阵 |
+| Sobol (Levitan-Lemieux) | QuantLib | Sobol 序列，Levitan-Lemieux 初始化矩阵 |
+| Sobol (Joe-Kuo D7) | QuantLib | Sobol 序列，Joe-Kuo D7 初始化矩阵 |
 
-### 启动参数
+### Normal Distribution Generators / 正态分布生成算法
 
-在`base.py`中可以指定启动参数。
+| Method | Source | Description |
+|--------|--------|-------------|
+| Box-Muller (standard) | Python `random` | 标准库 Box-Muller 算法 |
+| Ziggurat (NumPy) | NumPy | NumPy 的 Ziggurat 算法 |
+| Ziggurat (SciPy) | SciPy | SciPy 的 Ziggurat 算法 |
+| Inverse CDF | base + uniform | 逆 CDF 变换法 |
+| Central Limit Theorem | base + uniform | 中心极限定理叠加法 |
+| Box-Muller | base + uniform | 基于均匀分布的 Box-Muller 算法 |
+| Rejection Sampling | base + uniform | 拒绝采样法 |
 
-```python
-SKIP_PATHS = 2 ** 18 - 1 # quantlib库序列所用的路径跳跃参数
-MAX_BATCH_SIZE = 16384 # 最大单次采样规模
-STATS_SIZE = 65536 # 统计采样规模
-BASE_SCALE = 1000 # 数据规模
+The "base + uniform" methods derive normal samples from uniform sequences, enabling cross-evaluation of how upstream uniform generator quality propagates into downstream normal distribution quality and final Monte Carlo accuracy.
+
+标注为 "base + uniform" 的方法从均匀分布序列中生成正态分布样本，从而实现对上游均匀分布质量如何传导至下游正态分布质量和最终蒙特卡洛精度的交叉评估。
+
+### Sequence Variants / 序列变体
+
+Each generator produces three sequence variants for comparison:
+
+每个生成器产生三种序列变体用于比较：
+
+- **Origin** — Raw output from the generator / 生成器的原始输出
+- **Dual** — Antithetic variates (mirror image for variance reduction) / 对偶变量（对称镜像，用于方差缩减）
+- **Standard** — Normalized to standard range / 标准化至标准范围
+
+### Statistical Tests / 统计检验
+
+**Uniform distribution quality / 均匀分布质量：**
+
+- Kolmogorov-Smirnov test (KS test)
+- Cramér-von Mises test (CM test)
+- Star discrepancy / 星偏差
+
+**Normal distribution quality / 正态分布质量：**
+
+- Kolmogorov-Smirnov test (KS test)
+- Cramér-von Mises test (CM test)
+- Lilliefors test (KSL test)
+- D'Agostino's K-squared test (SK test)
+- Jarque-Bera test (JB test)
+- Skewness and kurtosis / 偏度与峰度
+
+### Monte Carlo Pricing / 蒙特卡洛定价
+
+European call option prices are computed via Monte Carlo simulation assuming geometric Brownian motion, then compared against the closed-form Black-Scholes solution. 10 test cases with varying parameters (S, σ, K, T, r) are used to measure relative pricing error across all RNG combinations.
+
+采用几何布朗运动假设，通过蒙特卡洛模拟计算欧式看涨期权价格，并与 Black-Scholes 公式的解析解进行比较。使用 10 组不同参数 (S, σ, K, T, r) 的测试样例，衡量各 RNG 组合的相对定价误差。
+
+## Project Structure / 文件结构
+
+```
+.
+├── base.py              # Constants, helpers, Distribution abstract base class
+│                        # 常量、工具函数、Distribution 抽象基类
+├── Uniformer.py         # Uniform distribution generator (13 methods)
+│                        # 均匀分布生成器（13 种算法）
+├── Normalist.py         # Normal distribution generator (7 methods)
+│                        # 正态分布生成器（7 种算法）
+├── MonteCarlo.py        # Monte Carlo option pricing test
+│                        # 蒙特卡洛期权定价测试
+├── docs/
+│   ├── document.ipynb   # Full analysis report (Jupyter Notebook)
+│   │                    # 完整分析报告（Jupyter Notebook）
+│   └── assets/          # Figures used in the report
+│                        # 报告中使用的插图
+├── reports/             # Generated test reports (not tracked)
+│                        # 生成的测试报告（未纳入版本控制）
+└── cache/               # Pickled intermediate data (not tracked)
+                         # 缓存的中间数据（未纳入版本控制）
 ```
 
-### 生成均匀分布随机数
+## Usage / 使用方法
 
-运行`Uniformer.py`即可，这将调用所有`UGM`中列举的算法生成均匀分布的随机数，除非某算法已在`ign`列表中指定。
+### Prerequisites / 前置依赖
 
-程序产生的所有生成器将以字典的形式缓存，缓存文件储存在`cache`文件夹中，可以调用`Uniformer.read()`重新读取缓存文件。
+```bash
+pip install numpy scipy pandas sympy statsmodels QuantLib-Python matplotlib seaborn
+```
 
-### 生成正态分布随机数
+### Configuration / 配置
 
-需要`cache`文件夹中已存在同规模的均匀分布随机数生成器的缓存文件。
+Key parameters are defined in `base.py`:
 
-运行`Normalist.py`即可，这将调用所有`NGM`中列举的算法生成均匀分布的随机数，除非某算法已在`ign`列表中指定。
+主要参数定义在 `base.py` 中：
 
-程序产生的所有生成器将以字典的形式缓存，缓存文件储存在`cache`文件夹中，可以调用`Normalist.read()`重新读取缓存文件。
+```python
+RANDOM_SEED = 42            # Random seed / 随机种子
+SKIP_PATHS = 2 ** 18 - 1   # QuantLib sequence skip parameter / QuantLib 序列跳跃参数
+MAX_BATCH_SIZE = 16384      # Max single batch size / 最大单次采样规模
+STATS_SIZE = 65536          # Statistical sample size / 统计采样规模
+BASE_SCALE = 1000000        # Data scale / 数据规模
+```
 
-### 测试随机数对蒙特卡洛算法精度的影响
+### Running / 运行
 
-需要`cache`文件夹中已存在同规模的均匀分布随机数生成器和正态分布随机数生成器的缓存文件。
+The three modules should be run sequentially, as each depends on the cached results of the previous step:
 
-运行`MonteCarlo.py`，这将调用每一个正态分布随机数生成器的生成结果，使用蒙特卡洛方法计算`mc_examples`中欧式期权样例的估值，并计算其相对于BS模型结果的误差。
+三个模块需按顺序运行，每一步依赖上一步的缓存结果：
 
-测试结果将打包缓存至`cache`文件夹。
+```bash
+# Step 1: Generate and evaluate uniform distribution sequences
+# 第一步：生成并评估均匀分布序列
+python Uniformer.py
 
-### 测试分析报告
+# Step 2: Generate and evaluate normal distribution sequences
+# 第二步：生成并评估正态分布序列
+python Normalist.py
 
-测试分析报告详见`docs/document.ipynb`，其中的绘图函数需要基于缓存文件执行。
+# Step 3: Run Monte Carlo pricing tests
+# 第三步：运行蒙特卡洛定价测试
+python MonteCarlo.py
+```
+
+Test reports are saved to `reports/`. Cached generator objects are saved to `cache/` for reuse.
+
+测试报告保存至 `reports/`。缓存的生成器对象保存至 `cache/` 以便复用。
+
+### Analysis Report / 分析报告
+
+See `docs/document.ipynb` for the full analysis with visualizations. The notebook's plotting functions require the cached data files generated by the steps above.
+
+完整的分析报告及可视化详见 `docs/document.ipynb`。笔记本中的绘图函数需要上述步骤生成的缓存数据文件。
+
+## License / 许可
+
+This project is for research and educational purposes.
+
+本项目用于研究与教学目的。
