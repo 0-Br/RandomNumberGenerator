@@ -1,4 +1,4 @@
-# Python
+# Python 编译产物
 __pycache__/
 *.py[cod]
 *.egg-info/
@@ -9,10 +9,19 @@ build/
 # Jupyter
 .ipynb_checkpoints/
 
-# IDE
-.vscode/
-.idea/
-
-# Project-specific: generated data and reports
+# 项目生成文件
 cache/
 reports/
+
+# 系统文件
+.DS_Store
+._*
+Thumbs.db
+
+# 编辑器与 IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+\#*\#
