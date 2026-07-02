@@ -4,7 +4,7 @@
 
 **Impact of Random Number Quality on Monte Carlo Option Pricing Accuracy**
 
-## 概述 / Overview
+## 简介 / Introduction
 
 本项目通过定量分析，系统地比较和评价了多种随机数生成算法的质量与性能，并研究其对蒙特卡洛欧式看涨期权定价精确度的影响。研究涵盖了来自多个计算库的 13 种均匀分布生成算法和 7 种正态分布生成算法，通过一组完整的统计检验评估序列质量，最终衡量不同生成算法组合对期权定价结果的实际影响。
 
@@ -79,7 +79,7 @@ Each generator produces three sequence variants for comparison:
 
 European call option prices are computed via Monte Carlo simulation assuming geometric Brownian motion, then compared against the closed-form Black-Scholes solution. 10 test cases with varying parameters (S, σ, K, T, r) are used to measure relative pricing error across all RNG combinations.
 
-## 文件结构 / Project Structure
+## 项目结构 / Project Structure
 
 ```
 .
