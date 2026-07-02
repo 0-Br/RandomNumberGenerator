@@ -1,0 +1,8 @@
+[Inverse_CDF]MonteCarlo Report
+  --based on Mersenne_Twister [dual]
+[S=1000.00, sigma=0.80, K=1200.00, T=5.00, r=0.10]
+Eval: 689.89336261
+True: 685.83774201
+Error = 0.005913
+---END---
+

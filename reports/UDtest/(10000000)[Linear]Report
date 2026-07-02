@@ -1,0 +1,20 @@
+[Linear]UDtest Report
+TimeCost: 3.247717 s
+Num: 10000000
+ -Sequence Type: origin
+mean = 0.500000, var = 0.083333
+KStest: p = 1.000000
+CMtest: p = 1.000000
+Discrepancy: d = 0.000006
+ -Sequence Type: dual
+mean = 0.500000, var = 0.083333
+KStest: p = 1.000000
+CMtest: p = 1.000000
+Discrepancy: d = 0.000014
+ -Sequence Type: standard
+mean = 0.500000, var = 0.083333
+KStest: p = 1.000000
+CMtest: p = 1.000000
+Discrepancy: d = 0.000021
+---END---
+

@@ -1,0 +1,20 @@
+[Mersenne_Twister]UDtest Report
+TimeCost: 0.014067 s
+Num: 100000
+ -Sequence Type: origin
+mean = 0.500144, var = 0.083542
+KStest: p = 0.776939
+CMtest: p = 0.807951
+Discrepancy: d = 0.000004
+ -Sequence Type: dual
+mean = 0.500000, var = 0.083542
+KStest: p = 0.967096
+CMtest: p = 0.890301
+Discrepancy: d = 0.000011
+ -Sequence Type: standard
+mean = 0.500001, var = 0.083543
+KStest: p = 0.966844
+CMtest: p = 0.890013
+Discrepancy: d = 0.000007
+---END---
+

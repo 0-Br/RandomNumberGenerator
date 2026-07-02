@@ -1,0 +1,7 @@
+[Box_Muller_standard]MonteCarlo Report
+[S=50.00, sigma=0.30, K=60.00, T=1.00, r=0.06]
+Eval: 3.61212242
+True: 3.61262541
+Error = 0.000139
+---END---
+

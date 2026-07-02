@@ -1,0 +1,29 @@
+[Ziggurat_scipy]NDtest Report
+TimeCost: 0.001000 s
+Num: 250
+- Sequence Type: origin
+mean = -0.002423, var = 0.929527
+stew = 0.304901, kurt = 0.609237
+KStest: p = 0.666482
+CMtest: p = 0.739680
+KSLtest: p = 0.645280
+SKtest: p = 0.026461
+JBtest: p = 0.020860
+- Sequence Type: dual
+mean = -0.000000, var = 0.929533
+stew = -0.000000, kurt = 0.606164
+KStest: p = 0.827846
+CMtest: p = 0.700698
+KSLtest: p = 0.955941
+SKtest: p = 0.060783
+JBtest: p = 0.021765
+- Sequence Type: standard
+mean = 0.000000, var = 1.000000
+stew = 0.000000, kurt = 0.606164
+KStest: p = 0.992255
+CMtest: p = 0.975659
+KSLtest: p = 0.955941
+SKtest: p = 0.060783
+JBtest: p = 0.021765
+---END---
+

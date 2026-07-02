@@ -1,0 +1,8 @@
+[Inverse_CDF]MonteCarlo Report
+  --based on Sobol_LevitanLemieux [standard]
+[S=250.00, sigma=2.00, K=300.00, T=0.80, r=0.02]
+Eval: 148.41351822
+True: 149.39452657
+Error = 0.006567
+---END---
+

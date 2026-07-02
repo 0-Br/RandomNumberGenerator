@@ -1,0 +1,7 @@
+[Ziggurat_scipy]MonteCarlo Report
+[S=250.00, sigma=2.00, K=300.00, T=0.80, r=0.02]
+Eval: 149.11531529
+True: 149.39452657
+Error = 0.001869
+---END---
+

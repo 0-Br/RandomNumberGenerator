@@ -1,0 +1,30 @@
+[Rejection_Sampling]NDtest Report
+  --based on Sobol_LevitanLemieux [dual]
+TimeCost: 100.222903 s
+Num: 25000
+- Sequence Type: origin
+mean = -0.001209, var = 1.003961
+stew = 0.002875, kurt = 0.003347
+KStest: p = 0.979558
+CMtest: p = 0.977108
+KSLtest: p = 0.830726
+SKtest: p = 0.974507
+JBtest: p = 0.977211
+- Sequence Type: dual
+mean = 0.000000, var = 1.003962
+stew = -0.000000, kurt = 0.003333
+KStest: p = 0.954240
+CMtest: p = 0.986532
+KSLtest: p = 0.502396
+SKtest: p = 0.985928
+JBtest: p = 0.988492
+- Sequence Type: standard
+mean = 0.000000, var = 1.000000
+stew = 0.000000, kurt = 0.003333
+KStest: p = 0.890137
+CMtest: p = 0.966753
+KSLtest: p = 0.502396
+SKtest: p = 0.985928
+JBtest: p = 0.988492
+---END---
+

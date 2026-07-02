@@ -1,0 +1,30 @@
+[Box_Muller]NDtest Report
+  --based on Mersenne_Twister [standard]
+TimeCost: 0.568039 s
+Num: 250000
+- Sequence Type: origin
+mean = 0.002311, var = 0.998587
+stew = 0.005456, kurt = 0.022842
+KStest: p = 0.340861
+CMtest: p = 0.396345
+KSLtest: p = 0.148512
+SKtest: p = 0.037106
+JBtest: p = 0.035520
+- Sequence Type: dual
+mean = 0.000000, var = 0.998592
+stew = -0.000000, kurt = 0.022892
+KStest: p = 0.658080
+CMtest: p = 0.466905
+KSLtest: p = 0.223381
+SKtest: p = 0.004732
+JBtest: p = 0.004259
+- Sequence Type: standard
+mean = 0.000000, var = 1.000000
+stew = -0.000000, kurt = 0.022892
+KStest: p = 0.799676
+CMtest: p = 0.697790
+KSLtest: p = 0.223381
+SKtest: p = 0.004732
+JBtest: p = 0.004259
+---END---
+

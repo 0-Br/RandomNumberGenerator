@@ -1,0 +1,30 @@
+[Rejection_Sampling]NDtest Report
+  --based on Sobol_unit [standard]
+TimeCost: 0.848660 s
+Num: 2500
+- Sequence Type: origin
+mean = 0.012275, var = 0.990804
+stew = -0.023143, kurt = -0.121185
+KStest: p = 0.332442
+CMtest: p = 0.566783
+KSLtest: p = 0.217532
+SKtest: p = 0.409661
+JBtest: p = 0.416254
+- Sequence Type: dual
+mean = -0.000000, var = 0.990954
+stew = -0.000000, kurt = -0.122289
+KStest: p = 0.563386
+CMtest: p = 0.762526
+KSLtest: p = 0.101666
+SKtest: p = 0.186423
+JBtest: p = 0.210605
+- Sequence Type: standard
+mean = 0.000000, var = 1.000000
+stew = 0.000000, kurt = -0.122289
+KStest: p = 0.502090
+CMtest: p = 0.678669
+KSLtest: p = 0.101666
+SKtest: p = 0.186423
+JBtest: p = 0.210605
+---END---
+

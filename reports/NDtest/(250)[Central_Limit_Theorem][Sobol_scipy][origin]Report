@@ -1,0 +1,30 @@
+[Central_Limit_Theorem]NDtest Report
+  --based on Sobol_scipy [origin]
+TimeCost: 0.006887 s
+Num: 250
+- Sequence Type: origin
+mean = 0.495544, var = 0.006008
+stew = 0.075514, kurt = -0.364723
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.300651
+SKtest: p = 0.400533
+JBtest: p = 0.444136
+- Sequence Type: dual
+mean = -0.000000, var = 0.251572
+stew = 0.000000, kurt = -1.904712
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.001000
+SKtest: p = 0.000000
+JBtest: p = 0.000000
+- Sequence Type: standard
+mean = 0.000000, var = 1.000000
+stew = 0.000000, kurt = -1.904712
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.001000
+SKtest: p = 0.000000
+JBtest: p = 0.000000
+---END---
+

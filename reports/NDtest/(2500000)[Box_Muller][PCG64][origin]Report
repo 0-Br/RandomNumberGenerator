@@ -1,0 +1,30 @@
+[Box_Muller]NDtest Report
+  --based on PCG64 [origin]
+TimeCost: 5.592682 s
+Num: 2500000
+- Sequence Type: origin
+mean = -0.000406, var = 1.000335
+stew = -0.000431, kurt = 0.001251
+KStest: p = 0.736302
+CMtest: p = 0.828211
+KSLtest: p = 0.225858
+SKtest: p = 0.885928
+JBtest: p = 0.886672
+- Sequence Type: dual
+mean = -0.000000, var = 1.000335
+stew = 0.000000, kurt = 0.001252
+KStest: p = 0.987811
+CMtest: p = 0.998938
+KSLtest: p = 0.869503
+SKtest: p = 0.848719
+JBtest: p = 0.849344
+- Sequence Type: standard
+mean = -0.000000, var = 1.000000
+stew = -0.000000, kurt = 0.001252
+KStest: p = 0.999411
+CMtest: p = 0.999824
+KSLtest: p = 0.869503
+SKtest: p = 0.848719
+JBtest: p = 0.849344
+---END---
+

@@ -1,0 +1,8 @@
+[Inverse_CDF]MonteCarlo Report
+  --based on Sobol_unit [dual]
+[S=250.00, sigma=2.00, K=300.00, T=0.80, r=0.02]
+Eval: 148.90969498
+True: 149.39452657
+Error = 0.003245
+---END---
+

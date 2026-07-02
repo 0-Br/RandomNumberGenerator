@@ -1,0 +1,30 @@
+[Inverse_CDF]NDtest Report
+  --based on Sobol_LevitanLemieux [origin]
+TimeCost: 0.528717 s
+Num: 2500000
+- Sequence Type: origin
+mean = -0.000405, var = 0.999629
+stew = -0.000594, kurt = -0.000995
+KStest: p = 0.836370
+CMtest: p = 0.926427
+KSLtest: p = 0.428279
+SKtest: p = 0.883119
+JBtest: p = 0.882509
+- Sequence Type: dual
+mean = 0.000000, var = 0.999629
+stew = 0.000000, kurt = -0.000994
+KStest: p = 0.984773
+CMtest: p = 0.992003
+KSLtest: p = 0.842838
+SKtest: p = 0.902714
+JBtest: p = 0.902134
+- Sequence Type: standard
+mean = 0.000000, var = 1.000000
+stew = -0.000000, kurt = -0.000994
+KStest: p = 0.999096
+CMtest: p = 0.995461
+KSLtest: p = 0.842838
+SKtest: p = 0.902714
+JBtest: p = 0.902134
+---END---
+

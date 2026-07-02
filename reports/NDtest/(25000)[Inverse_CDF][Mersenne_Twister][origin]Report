@@ -1,0 +1,30 @@
+[Inverse_CDF]NDtest Report
+  --based on Mersenne_Twister [origin]
+TimeCost: 0.003999 s
+Num: 25000
+- Sequence Type: origin
+mean = 0.007387, var = 1.009688
+stew = -0.000555, kurt = -0.043619
+KStest: p = 0.372255
+CMtest: p = 0.298551
+KSLtest: p = 0.436289
+SKtest: p = 0.366374
+JBtest: p = 0.370986
+- Sequence Type: dual
+mean = 0.000000, var = 1.009743
+stew = -0.000000, kurt = -0.043631
+KStest: p = 0.689863
+CMtest: p = 0.426451
+KSLtest: p = 0.856193
+SKtest: p = 0.129998
+JBtest: p = 0.137662
+- Sequence Type: standard
+mean = -0.000000, var = 1.000000
+stew = -0.000000, kurt = -0.043631
+KStest: p = 0.986868
+CMtest: p = 0.925812
+KSLtest: p = 0.856193
+SKtest: p = 0.129998
+JBtest: p = 0.137662
+---END---
+

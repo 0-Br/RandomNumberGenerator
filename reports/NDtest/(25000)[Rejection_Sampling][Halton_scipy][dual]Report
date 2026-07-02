@@ -1,0 +1,30 @@
+[Rejection_Sampling]NDtest Report
+  --based on Halton_scipy [dual]
+TimeCost: 110.077125 s
+Num: 25000
+- Sequence Type: origin
+mean = -0.003517, var = 0.996157
+stew = -0.002945, kurt = -0.027837
+KStest: p = 0.843690
+CMtest: p = 0.804590
+KSLtest: p = 0.056005
+SKtest: p = 0.661913
+JBtest: p = 0.655952
+- Sequence Type: dual
+mean = -0.000000, var = 0.996169
+stew = 0.000000, kurt = -0.027795
+KStest: p = 0.544060
+CMtest: p = 0.772480
+KSLtest: p = 0.049546
+SKtest: p = 0.446200
+JBtest: p = 0.447197
+- Sequence Type: standard
+mean = -0.000000, var = 1.000000
+stew = 0.000000, kurt = -0.027795
+KStest: p = 0.450714
+CMtest: p = 0.681945
+KSLtest: p = 0.049546
+SKtest: p = 0.446200
+JBtest: p = 0.447197
+---END---
+

@@ -1,0 +1,20 @@
+[Sobol_LevitanLemieux]UDtest Report
+TimeCost: 0.019002 s
+Num: 100000
+ -Sequence Type: origin
+mean = 0.499711, var = 0.083411
+KStest: p = 0.987309
+CMtest: p = 0.998101
+Discrepancy: d = 0.000003
+ -Sequence Type: dual
+mean = 0.500000, var = 0.083411
+KStest: p = 0.999998
+CMtest: p = 0.999971
+Discrepancy: d = 0.000006
+ -Sequence Type: standard
+mean = 0.500008, var = 0.083413
+KStest: p = 0.999997
+CMtest: p = 0.999962
+Discrepancy: d = 0.000009
+---END---
+

@@ -1,0 +1,30 @@
+[Inverse_CDF]NDtest Report
+  --based on Poisson_Disk [origin]
+TimeCost: 0.000000 s
+Num: 250
+- Sequence Type: origin
+mean = -0.028276, var = 1.093837
+stew = -0.031252, kurt = 0.558231
+KStest: p = 0.801346
+CMtest: p = 0.743416
+KSLtest: p = 0.528864
+SKtest: p = 0.224165
+JBtest: p = 0.193326
+- Sequence Type: dual
+mean = 0.000000, var = 1.094636
+stew = -0.000000, kurt = 0.560789
+KStest: p = 0.948736
+CMtest: p = 0.776671
+KSLtest: p = 0.325522
+SKtest: p = 0.082465
+JBtest: p = 0.037784
+- Sequence Type: standard
+mean = -0.000000, var = 1.000000
+stew = -0.000000, kurt = 0.560789
+KStest: p = 0.690864
+CMtest: p = 0.413513
+KSLtest: p = 0.325522
+SKtest: p = 0.082465
+JBtest: p = 0.037784
+---END---
+

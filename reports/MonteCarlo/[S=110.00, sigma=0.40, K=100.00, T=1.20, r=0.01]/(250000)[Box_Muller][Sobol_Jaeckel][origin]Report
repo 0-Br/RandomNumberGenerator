@@ -1,0 +1,8 @@
+[Box_Muller]MonteCarlo Report
+  --based on Sobol_Jaeckel [origin]
+[S=110.00, sigma=0.40, K=100.00, T=1.20, r=0.01]
+Eval: 24.24145267
+True: 24.23304242
+Error = 0.000347
+---END---
+

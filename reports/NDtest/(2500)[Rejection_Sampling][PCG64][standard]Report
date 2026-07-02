@@ -1,0 +1,30 @@
+[Rejection_Sampling]NDtest Report
+  --based on PCG64 [standard]
+TimeCost: 1.046899 s
+Num: 2500
+- Sequence Type: origin
+mean = -0.045899, var = 1.024548
+stew = -0.065196, kurt = -0.094442
+KStest: p = 0.069653
+CMtest: p = 0.073569
+KSLtest: p = 0.008187
+SKtest: p = 0.263582
+JBtest: p = 0.259223
+- Sequence Type: dual
+mean = 0.000000, var = 1.026655
+stew = 0.000000, kurt = -0.082287
+KStest: p = 0.287776
+CMtest: p = 0.282574
+KSLtest: p = 0.085470
+SKtest: p = 0.492842
+JBtest: p = 0.493949
+- Sequence Type: standard
+mean = -0.000000, var = 1.000000
+stew = 0.000000, kurt = -0.082287
+KStest: p = 0.471803
+CMtest: p = 0.538323
+KSLtest: p = 0.085470
+SKtest: p = 0.492842
+JBtest: p = 0.493949
+---END---
+

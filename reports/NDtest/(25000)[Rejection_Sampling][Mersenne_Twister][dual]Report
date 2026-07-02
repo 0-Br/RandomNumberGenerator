@@ -1,0 +1,30 @@
+[Rejection_Sampling]NDtest Report
+  --based on Mersenne_Twister [dual]
+TimeCost: 109.071600 s
+Num: 25000
+- Sequence Type: origin
+mean = 0.006457, var = 1.006873
+stew = -0.013899, kurt = -0.011575
+KStest: p = 0.131690
+CMtest: p = 0.199614
+KSLtest: p = 0.223849
+SKtest: p = 0.628226
+JBtest: p = 0.623605
+- Sequence Type: dual
+mean = 0.000000, var = 1.006915
+stew = 0.000000, kurt = -0.011932
+KStest: p = 0.309347
+CMtest: p = 0.334071
+KSLtest: p = 0.034669
+SKtest: p = 0.868242
+JBtest: p = 0.862171
+- Sequence Type: standard
+mean = -0.000000, var = 1.000000
+stew = 0.000000, kurt = -0.011932
+KStest: p = 0.396188
+CMtest: p = 0.417677
+KSLtest: p = 0.034669
+SKtest: p = 0.868242
+JBtest: p = 0.862171
+---END---
+

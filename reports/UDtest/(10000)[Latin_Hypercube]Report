@@ -1,0 +1,20 @@
+[Latin_Hypercube]UDtest Report
+TimeCost: 0.694386 s
+Num: 4418
+ -Sequence Type: origin
+mean = 0.500001, var = 0.083780
+KStest: p = 0.822558
+CMtest: p = 0.998991
+Discrepancy: d = 0.000009
+ -Sequence Type: dual
+mean = 0.500000, var = 0.083780
+KStest: p = 0.568949
+CMtest: p = 0.979548
+Discrepancy: d = 0.000031
+ -Sequence Type: standard
+mean = 0.500036, var = 0.083792
+KStest: p = 0.557761
+CMtest: p = 0.978610
+Discrepancy: d = 0.000031
+---END---
+

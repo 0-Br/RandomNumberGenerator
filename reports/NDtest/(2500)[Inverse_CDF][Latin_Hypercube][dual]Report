@@ -1,0 +1,30 @@
+[Inverse_CDF]NDtest Report
+  --based on Latin_Hypercube [dual]
+TimeCost: 0.001001 s
+Num: 2500
+- Sequence Type: origin
+mean = -0.001086, var = 1.075405
+stew = 0.078513, kurt = 0.420340
+KStest: p = 0.930047
+CMtest: p = 0.951516
+KSLtest: p = 0.199415
+SKtest: p = 0.000344
+JBtest: p = 0.000028
+- Sequence Type: dual
+mean = 0.000000, var = 1.075406
+stew = 0.000000, kurt = 0.420010
+KStest: p = 0.812820
+CMtest: p = 0.982981
+KSLtest: p = 0.039409
+SKtest: p = 0.000002
+JBtest: p = 0.000000
+- Sequence Type: standard
+mean = -0.000000, var = 1.000000
+stew = 0.000000, kurt = 0.420010
+KStest: p = 0.357696
+CMtest: p = 0.283521
+KSLtest: p = 0.039409
+SKtest: p = 0.000002
+JBtest: p = 0.000000
+---END---
+

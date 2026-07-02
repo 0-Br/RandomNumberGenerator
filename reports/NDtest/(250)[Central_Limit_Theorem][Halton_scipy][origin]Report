@@ -1,0 +1,30 @@
+[Central_Limit_Theorem]NDtest Report
+  --based on Halton_scipy [origin]
+TimeCost: 0.004998 s
+Num: 250
+- Sequence Type: origin
+mean = 0.504242, var = 0.005931
+stew = -0.204005, kurt = 0.115265
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.508839
+SKtest: p = 0.342962
+JBtest: p = 0.392099
+- Sequence Type: dual
+mean = 0.000000, var = 0.260192
+stew = 0.000000, kurt = -1.912570
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.001000
+SKtest: p = 0.000000
+JBtest: p = 0.000000
+- Sequence Type: standard
+mean = 0.000000, var = 1.000000
+stew = 0.000000, kurt = -1.912570
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.001000
+SKtest: p = 0.000000
+JBtest: p = 0.000000
+---END---
+

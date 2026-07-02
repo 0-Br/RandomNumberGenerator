@@ -1,0 +1,30 @@
+[Rejection_Sampling]NDtest Report
+  --based on Poisson_Disk [origin]
+TimeCost: 0.075598 s
+Num: 250
+- Sequence Type: origin
+mean = 0.069184, var = 1.000633
+stew = 0.227401, kurt = 0.020678
+KStest: p = 0.722366
+CMtest: p = 0.692107
+KSLtest: p = 0.281952
+SKtest: p = 0.315502
+JBtest: p = 0.339750
+- Sequence Type: dual
+mean = -0.000000, var = 1.005419
+stew = 0.000000, kurt = 0.082748
+KStest: p = 0.943579
+CMtest: p = 0.962380
+KSLtest: p = 0.813153
+SKtest: p = 0.869328
+JBtest: p = 0.931158
+- Sequence Type: standard
+mean = -0.000000, var = 1.000000
+stew = 0.000000, kurt = 0.082748
+KStest: p = 0.948391
+CMtest: p = 0.959174
+KSLtest: p = 0.813153
+SKtest: p = 0.524328
+JBtest: p = 0.931158
+---END---
+

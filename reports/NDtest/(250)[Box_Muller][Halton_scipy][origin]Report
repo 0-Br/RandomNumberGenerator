@@ -1,0 +1,30 @@
+[Box_Muller]NDtest Report
+  --based on Halton_scipy [origin]
+TimeCost: 0.001000 s
+Num: 250
+- Sequence Type: origin
+mean = 0.009064, var = 0.949731
+stew = -0.117640, kurt = -0.216103
+KStest: p = 0.609637
+CMtest: p = 0.786691
+KSLtest: p = 0.368053
+SKtest: p = 0.622047
+JBtest: p = 0.587696
+- Sequence Type: dual
+mean = 0.000000, var = 0.949813
+stew = 0.000000, kurt = -0.220442
+KStest: p = 0.791189
+CMtest: p = 0.812235
+KSLtest: p = 0.668675
+SKtest: p = 0.612384
+JBtest: p = 0.602786
+- Sequence Type: standard
+mean = 0.000000, var = 1.000000
+stew = -0.000000, kurt = -0.220442
+KStest: p = 0.895734
+CMtest: p = 0.918093
+KSLtest: p = 0.668675
+SKtest: p = 0.612384
+JBtest: p = 0.602786
+---END---
+

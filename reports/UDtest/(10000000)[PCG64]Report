@@ -1,0 +1,20 @@
+[PCG64]UDtest Report
+TimeCost: 0.037154 s
+Num: 10000000
+ -Sequence Type: origin
+mean = 0.499920, var = 0.083330
+KStest: p = 0.159390
+CMtest: p = 0.277556
+Discrepancy: d = 0.000006
+ -Sequence Type: dual
+mean = 0.500000, var = 0.083330
+KStest: p = 0.999994
+CMtest: p = 0.999815
+Discrepancy: d = 0.000009
+ -Sequence Type: standard
+mean = 0.500000, var = 0.083330
+KStest: p = 0.999993
+CMtest: p = 0.999806
+Discrepancy: d = 0.000015
+---END---
+

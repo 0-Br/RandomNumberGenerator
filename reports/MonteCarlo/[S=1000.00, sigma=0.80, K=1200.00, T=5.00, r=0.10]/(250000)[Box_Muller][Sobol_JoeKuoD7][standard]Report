@@ -1,0 +1,8 @@
+[Box_Muller]MonteCarlo Report
+  --based on Sobol_JoeKuoD7 [standard]
+[S=1000.00, sigma=0.80, K=1200.00, T=5.00, r=0.10]
+Eval: 685.63509544
+True: 685.83774201
+Error = 0.000295
+---END---
+

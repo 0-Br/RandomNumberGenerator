@@ -1,0 +1,30 @@
+[Central_Limit_Theorem]NDtest Report
+  --based on Linear [origin]
+TimeCost: 0.055207 s
+Num: 250
+- Sequence Type: origin
+mean = 0.499389, var = 0.005333
+stew = -0.084194, kurt = -0.299336
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.472994
+SKtest: p = 0.546260
+JBtest: p = 0.540988
+- Sequence Type: dual
+mean = 0.000000, var = 0.254722
+stew = 0.000000, kurt = -1.918274
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.001000
+SKtest: p = 0.000000
+JBtest: p = 0.000000
+- Sequence Type: standard
+mean = -0.000000, var = 1.000000
+stew = 0.000000, kurt = -1.918274
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.001000
+SKtest: p = 0.000000
+JBtest: p = 0.000000
+---END---
+

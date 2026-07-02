@@ -1,0 +1,30 @@
+[Box_Muller]NDtest Report
+  --based on Linear [standard]
+TimeCost: 6.398790 s
+Num: 2500000
+- Sequence Type: origin
+mean = -0.000121, var = 0.999933
+stew = 0.000643, kurt = 0.005881
+KStest: p = 0.747338
+CMtest: p = 0.837621
+KSLtest: p = 0.191163
+SKtest: p = 0.152385
+JBtest: p = 0.151454
+- Sequence Type: dual
+mean = 0.000000, var = 0.999933
+stew = 0.000000, kurt = 0.005881
+KStest: p = 0.875539
+CMtest: p = 0.750059
+KSLtest: p = 0.217567
+SKtest: p = 0.027716
+JBtest: p = 0.027258
+- Sequence Type: standard
+mean = 0.000000, var = 1.000000
+stew = 0.000000, kurt = 0.005881
+KStest: p = 0.895775
+CMtest: p = 0.784473
+KSLtest: p = 0.217567
+SKtest: p = 0.027716
+JBtest: p = 0.027258
+---END---
+

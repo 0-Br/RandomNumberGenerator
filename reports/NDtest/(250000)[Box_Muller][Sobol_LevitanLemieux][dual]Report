@@ -1,0 +1,30 @@
+[Box_Muller]NDtest Report
+  --based on Sobol_LevitanLemieux [dual]
+TimeCost: 0.549540 s
+Num: 250000
+- Sequence Type: origin
+mean = -0.003516, var = 1.003233
+stew = 0.008288, kurt = -0.001319
+KStest: p = 0.088085
+CMtest: p = 0.037872
+KSLtest: p = 0.342134
+SKtest: p = 0.237141
+JBtest: p = 0.236924
+- Sequence Type: dual
+mean = -0.000000, var = 1.003245
+stew = -0.000000, kurt = -0.001435
+KStest: p = 0.931970
+CMtest: p = 0.857552
+KSLtest: p = 0.651198
+SKtest: p = 0.979787
+JBtest: p = 0.978776
+- Sequence Type: standard
+mean = -0.000000, var = 1.000000
+stew = 0.000000, kurt = -0.001435
+KStest: p = 0.971911
+CMtest: p = 0.948392
+KSLtest: p = 0.651198
+SKtest: p = 0.979787
+JBtest: p = 0.978776
+---END---
+

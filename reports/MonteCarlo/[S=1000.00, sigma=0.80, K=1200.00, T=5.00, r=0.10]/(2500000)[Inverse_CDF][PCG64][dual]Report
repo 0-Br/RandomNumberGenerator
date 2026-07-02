@@ -1,0 +1,8 @@
+[Inverse_CDF]MonteCarlo Report
+  --based on PCG64 [dual]
+[S=1000.00, sigma=0.80, K=1200.00, T=5.00, r=0.10]
+Eval: 685.91859816
+True: 685.83774201
+Error = 0.000118
+---END---
+

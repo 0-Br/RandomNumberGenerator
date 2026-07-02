@@ -1,0 +1,8 @@
+[Box_Muller]MonteCarlo Report
+  --based on Sobol_Kuo3 [origin]
+[S=80.00, sigma=0.40, K=100.00, T=20.00, r=0.10]
+Eval: 70.33969143
+True: 70.33777711
+Error = 0.000027
+---END---
+

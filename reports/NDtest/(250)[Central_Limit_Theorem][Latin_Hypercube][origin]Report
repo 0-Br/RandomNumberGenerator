@@ -1,0 +1,30 @@
+[Central_Limit_Theorem]NDtest Report
+  --based on Latin_Hypercube [origin]
+TimeCost: 0.007999 s
+Num: 250
+- Sequence Type: origin
+mean = 0.507165, var = 0.005946
+stew = -0.255262, kurt = -0.312423
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.092297
+SKtest: p = 0.149343
+JBtest: p = 0.154765
+- Sequence Type: dual
+mean = -0.000000, var = 0.263162
+stew = -0.000000, kurt = -1.914237
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.001000
+SKtest: p = 0.000000
+JBtest: p = 0.000000
+- Sequence Type: standard
+mean = -0.000000, var = 1.000000
+stew = 0.000000, kurt = -1.914237
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.001000
+SKtest: p = 0.000000
+JBtest: p = 0.000000
+---END---
+

@@ -1,0 +1,20 @@
+[Halton_scipy]UDtest Report
+TimeCost: 0.056134 s
+Num: 1000
+ -Sequence Type: origin
+mean = 0.500086, var = 0.083950
+KStest: p = 0.999323
+CMtest: p = 1.000000
+Discrepancy: d = 0.000029
+ -Sequence Type: dual
+mean = 0.500000, var = 0.083950
+KStest: p = 0.985131
+CMtest: p = 0.999984
+Discrepancy: d = 0.000074
+ -Sequence Type: standard
+mean = 0.500108, var = 0.083986
+KStest: p = 0.981552
+CMtest: p = 0.999978
+Discrepancy: d = 0.000074
+---END---
+

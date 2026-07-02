@@ -1,0 +1,8 @@
+[Box_Muller]MonteCarlo Report
+  --based on Sobol_unit [dual]
+[S=140.00, sigma=0.25, K=50.00, T=1.30, r=0.05]
+Eval: 93.14689242
+True: 93.14695489
+Error = 0.000001
+---END---
+

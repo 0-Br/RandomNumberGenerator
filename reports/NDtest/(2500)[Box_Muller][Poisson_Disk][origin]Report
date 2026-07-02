@@ -1,0 +1,30 @@
+[Box_Muller]NDtest Report
+  --based on Poisson_Disk [origin]
+TimeCost: 0.007686 s
+Num: 2500
+- Sequence Type: origin
+mean = -0.028049, var = 1.041545
+stew = 0.050420, kurt = 0.092495
+KStest: p = 0.190480
+CMtest: p = 0.164718
+KSLtest: p = 0.072033
+SKtest: p = 0.363506
+JBtest: p = 0.377116
+- Sequence Type: dual
+mean = -0.000000, var = 1.042332
+stew = 0.000000, kurt = 0.086819
+KStest: p = 0.594558
+CMtest: p = 0.520542
+KSLtest: p = 0.031132
+SKtest: p = 0.454485
+JBtest: p = 0.456044
+- Sequence Type: standard
+mean = 0.000000, var = 1.000000
+stew = 0.000000, kurt = 0.086819
+KStest: p = 0.328674
+CMtest: p = 0.465016
+KSLtest: p = 0.031132
+SKtest: p = 0.454485
+JBtest: p = 0.456044
+---END---
+

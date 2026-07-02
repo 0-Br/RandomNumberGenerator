@@ -1,0 +1,30 @@
+[Rejection_Sampling]NDtest Report
+  --based on Linear [standard]
+TimeCost: 0.071728 s
+Num: 250
+- Sequence Type: origin
+mean = -0.017202, var = 1.045159
+stew = -0.081377, kurt = 0.150471
+KStest: p = 0.712564
+CMtest: p = 0.818335
+KSLtest: p = 0.380129
+SKtest: p = 0.681887
+JBtest: p = 0.774228
+- Sequence Type: dual
+mean = -0.000000, var = 1.045455
+stew = 0.000000, kurt = 0.155860
+KStest: p = 0.878938
+CMtest: p = 0.895418
+KSLtest: p = 0.378466
+SKtest: p = 0.706053
+JBtest: p = 0.776434
+- Sequence Type: standard
+mean = 0.000000, var = 1.000000
+stew = 0.000000, kurt = 0.155860
+KStest: p = 0.729955
+CMtest: p = 0.804923
+KSLtest: p = 0.378466
+SKtest: p = 0.706053
+JBtest: p = 0.776434
+---END---
+

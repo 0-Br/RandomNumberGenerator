@@ -1,0 +1,30 @@
+[Central_Limit_Theorem]NDtest Report
+  --based on Mersenne_Twister [dual]
+TimeCost: 0.004936 s
+Num: 250
+- Sequence Type: origin
+mean = 0.496850, var = 0.006273
+stew = 0.006508, kurt = -0.527675
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.865072
+SKtest: p = 0.099545
+JBtest: p = 0.234313
+- Sequence Type: dual
+mean = -0.000000, var = 0.253133
+stew = 0.000000, kurt = -1.902323
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.001000
+SKtest: p = 0.000000
+JBtest: p = 0.000000
+- Sequence Type: standard
+mean = 0.000000, var = 1.000000
+stew = 0.000000, kurt = -1.902323
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.001000
+SKtest: p = 0.000000
+JBtest: p = 0.000000
+---END---
+

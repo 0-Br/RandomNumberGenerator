@@ -1,0 +1,8 @@
+[Box_Muller]MonteCarlo Report
+  --based on PCG64 [dual]
+[S=80.00, sigma=0.40, K=100.00, T=20.00, r=0.10]
+Eval: 71.17940949
+True: 70.33777711
+Error = 0.011966
+---END---
+

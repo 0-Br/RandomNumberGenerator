@@ -1,0 +1,30 @@
+[Box_Muller]NDtest Report
+  --based on Latin_Hypercube [standard]
+TimeCost: 0.007534 s
+Num: 2500
+- Sequence Type: origin
+mean = 0.001407, var = 1.023843
+stew = -0.017446, kurt = 0.057499
+KStest: p = 0.430231
+CMtest: p = 0.386472
+KSLtest: p = 0.079081
+SKtest: p = 0.761533
+JBtest: p = 0.790092
+- Sequence Type: dual
+mean = -0.000000, var = 1.023845
+stew = 0.000000, kurt = 0.057402
+KStest: p = 0.418188
+CMtest: p = 0.566613
+KSLtest: p = 0.221393
+SKtest: p = 0.419120
+JBtest: p = 0.709477
+- Sequence Type: standard
+mean = 0.000000, var = 1.000000
+stew = 0.000000, kurt = 0.057402
+KStest: p = 0.646895
+CMtest: p = 0.764680
+KSLtest: p = 0.221393
+SKtest: p = 0.419120
+JBtest: p = 0.709477
+---END---
+

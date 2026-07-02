@@ -1,0 +1,30 @@
+[Inverse_CDF]NDtest Report
+  --based on Sobol_JoeKuoD7 [dual]
+TimeCost: 1.029430 s
+Num: 2500000
+- Sequence Type: origin
+mean = -0.000246, var = 1.000667
+stew = 0.001864, kurt = -0.003347
+KStest: p = 0.272048
+CMtest: p = 0.363160
+KSLtest: p = 0.022250
+SKtest: p = 0.270716
+JBtest: p = 0.270569
+- Sequence Type: dual
+mean = 0.000000, var = 1.000667
+stew = -0.000000, kurt = -0.003349
+KStest: p = 0.936880
+CMtest: p = 0.679256
+KSLtest: p = 0.749730
+SKtest: p = 0.310471
+JBtest: p = 0.310910
+- Sequence Type: standard
+mean = -0.000000, var = 1.000000
+stew = 0.000000, kurt = -0.003349
+KStest: p = 0.996785
+CMtest: p = 0.959027
+KSLtest: p = 0.749730
+SKtest: p = 0.310471
+JBtest: p = 0.310910
+---END---
+

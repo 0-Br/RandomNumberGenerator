@@ -1,0 +1,30 @@
+[Central_Limit_Theorem]NDtest Report
+  --based on Sobol_LevitanLemieux [origin]
+TimeCost: 0.004999 s
+Num: 250
+- Sequence Type: origin
+mean = 0.518096, var = 0.006326
+stew = -0.154904, kurt = -0.034038
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.845083
+SKtest: p = 0.589882
+JBtest: p = 0.602943
+- Sequence Type: dual
+mean = -0.000000, var = 0.274749
+stew = -0.000000, kurt = -1.911122
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.001000
+SKtest: p = 0.000000
+JBtest: p = 0.000000
+- Sequence Type: standard
+mean = 0.000000, var = 1.000000
+stew = 0.000000, kurt = -1.911122
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.001000
+SKtest: p = 0.000000
+JBtest: p = 0.000000
+---END---
+

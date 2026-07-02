@@ -1,0 +1,20 @@
+[Sobol_Kuo3]UDtest Report
+TimeCost: 0.517053 s
+Num: 10000000
+ -Sequence Type: origin
+mean = 0.499998, var = 0.083334
+KStest: p = 1.000000
+CMtest: p = 1.000000
+Discrepancy: d = 0.000012
+ -Sequence Type: dual
+mean = 0.500000, var = 0.083334
+KStest: p = 1.000000
+CMtest: p = 1.000000
+Discrepancy: d = 0.000004
+ -Sequence Type: standard
+mean = 0.500000, var = 0.083334
+KStest: p = 1.000000
+CMtest: p = 1.000000
+Discrepancy: d = 0.000005
+---END---
+

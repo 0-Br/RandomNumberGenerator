@@ -1,0 +1,30 @@
+[Rejection_Sampling]NDtest Report
+  --based on Latin_Hypercube [origin]
+TimeCost: 1.002519 s
+Num: 2500
+- Sequence Type: origin
+mean = -0.027439, var = 1.020412
+stew = -0.059983, kurt = -0.060583
+KStest: p = 0.084268
+CMtest: p = 0.276960
+KSLtest: p = 0.004158
+SKtest: p = 0.401081
+JBtest: p = 0.390339
+- Sequence Type: dual
+mean = -0.000000, var = 1.021164
+stew = -0.000000, kurt = -0.053988
+KStest: p = 0.392801
+CMtest: p = 0.432681
+KSLtest: p = 0.115995
+SKtest: p = 0.754412
+JBtest: p = 0.738149
+- Sequence Type: standard
+mean = 0.000000, var = 1.000000
+stew = -0.000000, kurt = -0.053988
+KStest: p = 0.518922
+CMtest: p = 0.656484
+KSLtest: p = 0.115995
+SKtest: p = 0.754412
+JBtest: p = 0.738149
+---END---
+

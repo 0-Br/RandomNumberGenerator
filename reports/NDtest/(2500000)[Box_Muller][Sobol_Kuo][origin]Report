@@ -1,0 +1,30 @@
+[Box_Muller]NDtest Report
+  --based on Sobol_Kuo [origin]
+TimeCost: 5.611727 s
+Num: 2500000
+- Sequence Type: origin
+mean = 0.000550, var = 0.999818
+stew = -0.002948, kurt = 0.000727
+KStest: p = 0.073345
+CMtest: p = 0.155413
+KSLtest: p = 0.001423
+SKtest: p = 0.159124
+JBtest: p = 0.159208
+- Sequence Type: dual
+mean = -0.000000, var = 0.999818
+stew = 0.000000, kurt = 0.000721
+KStest: p = 0.727583
+CMtest: p = 0.758650
+KSLtest: p = 0.042559
+SKtest: p = 0.946847
+JBtest: p = 0.947323
+- Sequence Type: standard
+mean = -0.000000, var = 1.000000
+stew = 0.000000, kurt = 0.000721
+KStest: p = 0.686527
+CMtest: p = 0.742021
+KSLtest: p = 0.042559
+SKtest: p = 0.946847
+JBtest: p = 0.947323
+---END---
+

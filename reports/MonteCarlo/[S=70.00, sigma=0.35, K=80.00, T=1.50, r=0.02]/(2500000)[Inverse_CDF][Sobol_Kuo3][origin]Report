@@ -1,0 +1,8 @@
+[Inverse_CDF]MonteCarlo Report
+  --based on Sobol_Kuo3 [origin]
+[S=70.00, sigma=0.35, K=80.00, T=1.50, r=0.02]
+Eval: 9.06792790
+True: 9.06753284
+Error = 0.000044
+---END---
+

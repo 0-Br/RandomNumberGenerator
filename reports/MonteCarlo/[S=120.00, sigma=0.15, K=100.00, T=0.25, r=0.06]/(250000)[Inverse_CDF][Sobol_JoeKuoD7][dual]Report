@@ -1,0 +1,8 @@
+[Inverse_CDF]MonteCarlo Report
+  --based on Sobol_JoeKuoD7 [dual]
+[S=120.00, sigma=0.15, K=100.00, T=0.25, r=0.06]
+Eval: 21.49980078
+True: 21.49961190
+Error = 0.000009
+---END---
+

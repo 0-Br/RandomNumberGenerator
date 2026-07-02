@@ -1,0 +1,8 @@
+[Box_Muller]MonteCarlo Report
+  --based on Sobol_LevitanLemieux [origin]
+[S=1000.00, sigma=0.80, K=1200.00, T=5.00, r=0.10]
+Eval: 683.32843220
+True: 685.83774201
+Error = 0.003659
+---END---
+

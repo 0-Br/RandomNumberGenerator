@@ -1,0 +1,30 @@
+[Inverse_CDF]NDtest Report
+  --based on PCG64 [standard]
+TimeCost: 1.004685 s
+Num: 2500000
+- Sequence Type: origin
+mean = 0.000897, var = 0.998728
+stew = 0.001585, kurt = 0.001713
+KStest: p = 0.254480
+CMtest: p = 0.233876
+KSLtest: p = 0.466868
+SKtest: p = 0.508004
+JBtest: p = 0.508527
+- Sequence Type: dual
+mean = -0.000000, var = 0.998729
+stew = -0.000000, kurt = 0.001719
+KStest: p = 0.310653
+CMtest: p = 0.436648
+KSLtest: p = 0.115564
+SKtest: p = 0.734514
+JBtest: p = 0.735074
+- Sequence Type: standard
+mean = -0.000000, var = 1.000000
+stew = -0.000000, kurt = 0.001719
+KStest: p = 0.817144
+CMtest: p = 0.950490
+KSLtest: p = 0.115564
+SKtest: p = 0.734514
+JBtest: p = 0.735074
+---END---
+

@@ -1,0 +1,30 @@
+[Rejection_Sampling]NDtest Report
+  --based on Sobol_Kuo [origin]
+TimeCost: 0.955416 s
+Num: 2500
+- Sequence Type: origin
+mean = -0.002780, var = 0.977139
+stew = 0.008085, kurt = -0.057372
+KStest: p = 0.361756
+CMtest: p = 0.443058
+KSLtest: p = 0.059608
+SKtest: p = 0.856094
+JBtest: p = 0.831061
+- Sequence Type: dual
+mean = 0.000000, var = 0.977147
+stew = 0.000000, kurt = -0.057462
+KStest: p = 0.900934
+CMtest: p = 0.938580
+KSLtest: p = 0.578814
+SKtest: p = 0.438783
+JBtest: p = 0.708969
+- Sequence Type: standard
+mean = 0.000000, var = 1.000000
+stew = 0.000000, kurt = -0.057462
+KStest: p = 0.886595
+CMtest: p = 0.957994
+KSLtest: p = 0.578814
+SKtest: p = 0.723862
+JBtest: p = 0.708969
+---END---
+

@@ -1,0 +1,30 @@
+[Inverse_CDF]NDtest Report
+  --based on Halton_scipy [origin]
+TimeCost: 0.000998 s
+Num: 250
+- Sequence Type: origin
+mean = 0.015162, var = 1.028713
+stew = -0.188585, kurt = 0.250074
+KStest: p = 0.406688
+CMtest: p = 0.594877
+KSLtest: p = 0.228366
+SKtest: p = 0.289038
+JBtest: p = 0.344164
+- Sequence Type: dual
+mean = -0.000000, var = 1.028943
+stew = 0.000000, kurt = 0.238691
+KStest: p = 0.827978
+CMtest: p = 0.695693
+KSLtest: p = 0.646040
+SKtest: p = 0.511638
+JBtest: p = 0.552405
+- Sequence Type: standard
+mean = 0.000000, var = 1.000000
+stew = 0.000000, kurt = 0.238691
+KStest: p = 0.878856
+CMtest: p = 0.753830
+KSLtest: p = 0.646040
+SKtest: p = 0.511638
+JBtest: p = 0.552405
+---END---
+

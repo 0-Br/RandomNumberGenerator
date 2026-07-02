@@ -1,0 +1,30 @@
+[Central_Limit_Theorem]NDtest Report
+  --based on PCG64 [dual]
+TimeCost: 0.005536 s
+Num: 250
+- Sequence Type: origin
+mean = 0.503369, var = 0.006149
+stew = 0.026049, kurt = -0.249112
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.788239
+SKtest: p = 0.757092
+JBtest: p = 0.713659
+- Sequence Type: dual
+mean = 0.000000, var = 0.259529
+stew = 0.000000, kurt = -1.906119
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.001000
+SKtest: p = 0.000000
+JBtest: p = 0.000000
+- Sequence Type: standard
+mean = 0.000000, var = 1.000000
+stew = -0.000000, kurt = -1.906119
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.001000
+SKtest: p = 0.000000
+JBtest: p = 0.000000
+---END---
+

@@ -1,0 +1,30 @@
+[Central_Limit_Theorem]NDtest Report
+  --based on Sobol_JoeKuoD7 [standard]
+TimeCost: 0.004090 s
+Num: 250
+- Sequence Type: origin
+mean = 0.495982, var = 0.006076
+stew = 0.144462, kurt = -0.190993
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.947666
+SKtest: p = 0.564304
+JBtest: p = 0.535387
+- Sequence Type: dual
+mean = 0.000000, var = 0.252075
+stew = -0.000000, kurt = -1.902715
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.001000
+SKtest: p = 0.000000
+JBtest: p = 0.000000
+- Sequence Type: standard
+mean = -0.000000, var = 1.000000
+stew = 0.000000, kurt = -1.902715
+KStest: p = 0.000000
+CMtest: p = 0.000000
+KSLtest: p = 0.001000
+SKtest: p = 0.000000
+JBtest: p = 0.000000
+---END---
+

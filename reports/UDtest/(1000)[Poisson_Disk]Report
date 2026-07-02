@@ -1,0 +1,20 @@
+[Poisson_Disk]UDtest Report
+TimeCost: 0.262409 s
+Num: 594
+ -Sequence Type: origin
+mean = 0.501869, var = 0.085762
+KStest: p = 0.978218
+CMtest: p = 0.997049
+Discrepancy: d = 0.000106
+ -Sequence Type: dual
+mean = 0.500000, var = 0.085765
+KStest: p = 0.881209
+CMtest: p = 0.973895
+Discrepancy: d = 0.000423
+ -Sequence Type: standard
+mean = 0.500067, var = 0.085788
+KStest: p = 0.875546
+CMtest: p = 0.972514
+Discrepancy: d = 0.000424
+---END---
+
