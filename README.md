@@ -90,7 +90,7 @@ European call option prices are computed via Monte Carlo simulation assuming geo
 ├── docs/
 │   ├── document.ipynb   # 完整分析报告（Jupyter Notebook）
 │   └── assets/          # 报告插图
-├── reports/             # 生成的测试报告（未纳入版本控制）
+├── reports/             # 生成的测试报告（研究结果，已存档）
 └── cache/               # 缓存的中间数据（未纳入版本控制）
 ```
 
