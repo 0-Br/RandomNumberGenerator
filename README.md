@@ -144,5 +144,3 @@ See `docs/document.ipynb` for the full analysis with visualizations. The noteboo
 ## 声明
 
 本项目仅供学习交流参考，请勿直接复制用于课程作业提交。
-
-<!-- 课程名待补：本项目为清华大学《XX》课程研究项目 -->
