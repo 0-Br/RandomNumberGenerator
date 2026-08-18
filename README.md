@@ -52,7 +52,7 @@ Each generator produces three sequence variants for comparison:
 
 - **Origin** — 生成器的原始输出 / Raw output from the generator
 - **Dual** — 对偶变量，对称镜像，用于方差缩减 / Antithetic variates for variance reduction
-- **Standard** — 标准化至标准范围 / Normalized to standard range
+- **Standard** — 标准化：均匀序列按最大值缩放回 [0,1)，正态序列做 z-score 标准化至均值 0、标准差 1 / Standardized: uniform sequences rescaled into [0,1), normal sequences z-scored to mean 0 and unit variance
 
 ### 统计检验 / Statistical Tests
 
@@ -60,7 +60,7 @@ Each generator produces three sequence variants for comparison:
 
 - Kolmogorov-Smirnov 检验 (KS test)
 - Cramér-von Mises 检验 (CM test)
-- 星偏差 (Star discrepancy)
+- 偏差度 (Discrepancy)
 
 **正态分布质量：**
 
